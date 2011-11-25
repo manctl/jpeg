@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 2.8)
+project(jpeg)
+file(GLOB jpeg_HEADERS *.h)
+file(GLOB jpeg_SOURCES *.c)
+add_library(jpeg STATIC ${jpeg_SOURCES} ${jpeg_HEADERS})
+install(TARGETS jpeg DESTINATION lib)
+install(FILES ${jpeg_HEADERS} DESTINATION include)
