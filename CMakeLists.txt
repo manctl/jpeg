@@ -21,6 +21,8 @@ list(REMOVE_ITEM jpeg_SOURCES
     jpegtran.c
     rdjpgcom.c
     wrjpgcom.c
+    jmemdos.c
+    jmemmac.c
 )
 
 if(LINUX AND M64)
